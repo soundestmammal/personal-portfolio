@@ -5,9 +5,9 @@ import Blog from './Blog';
 const Main = () => {
     return (
         <section id="main">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
+            <div className="container">
+                <div className="row">
+                    <div className="col-12">
                         <Portfolio />
                         <Blog />
                     </div>

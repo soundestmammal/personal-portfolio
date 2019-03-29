@@ -26,7 +26,7 @@ const About = () => {
 									<section class="last">
 										<i class="icon featured alt2 fa-star"></i>
 										<header>
-											<h2>Empirical Researcher</h2>
+											<h2>Transportation Research</h2>
 										</header>
 										<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
 									</section>

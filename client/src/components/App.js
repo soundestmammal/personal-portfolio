@@ -6,6 +6,7 @@ import Header from './Header';
 import Banner from './Banner';
 import About from './About';
 import Main from './Main';
+import Footer from './Footer';
 // import Dashboard from './Dashboard';
 // import UrbanEcon from './UrbanEcon';
 // import ChapterOne from './ChapterOne';
@@ -20,8 +21,9 @@ class App extends Component {
                             <Header />
                             <Banner />
                             <About />
-                            <Main />
                         </div>
+                        <Main />
+                        <Footer />
                     </div>
                     
                 </div>
