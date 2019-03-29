@@ -1,13 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../portfolio-design-assets/assets/css/main.css';
 
 const Header = () => {
     return (
-        <div className="ui inverted menu">
-            <div className='header item'><Link to="/">Robert Checco</Link></div>
-            <div className='header item'><Link to="/farmingdale">Dashboard</Link></div>
-            <div className='header item'><Link to="/farmingdale/urbanecon">Urban Economics</Link></div>
-        </div>
+            <nav id="nav">
+                <ul>
+                    <li className="current"><a href="index.html">Home</a></li>
+                    <li><a href="left-sidebar.html">About</a></li>
+                    <li><a href="right-sidebar.html">Portfolio</a></li>
+                    <li><a href="no-sidebar.html">Blog</a></li>
+                </ul>
+            </nav>
     )
 }
 
