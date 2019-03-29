@@ -22,10 +22,6 @@ class App extends Component {
                             <About />
                             <Main />
                         </div>
-                            
-                            {/* <Route exact path="/farmingdale" component={Dashboard}/>
-                            <Route exact path="/farmingdale/urbanecon" component={UrbanEcon}/>
-                            <Route exact path="/farmingdale/urbanecon/ch1" component={ChapterOne} /> */}
                     </div>
                     
                 </div>
