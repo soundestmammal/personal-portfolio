@@ -33,7 +33,7 @@ class App extends Component {
     render() {
         return (
             <div>
-                <p>Hey! My name is Rob and this is my portfolio! Stay tuned to check out the latest from me!</p>
+                <p>Hey! My name is Rob and this is my portfolio! Stay tuned to check out the latest from me! This should trigger a change...</p>
             </div>
         )
     }
