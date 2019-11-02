@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 
 
 //import Header from './Header';
@@ -32,9 +32,11 @@ import React, { Component } from 'react';
 class App extends Component {
     render() {
         return (
-            <div>
-                <p>Hey! My name is Rob and this is my portfolio! Stay tuned to check out the latest from me! This should trigger a change...</p>
-            </div>
+            <BrowserRouter>
+                <div>
+                    <p>Hey! My name is Rob and this is my portfolio! Stay tuned to check out the latest from me! This should trigger a change...</p>
+                </div>
+            </BrowserRouter>
         )
     }
 }
