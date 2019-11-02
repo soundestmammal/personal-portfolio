@@ -10,21 +10,25 @@ const Banner = () => {
             Flush to the right a button
             
             */}
-            <div className="bannerPhoto">
-                <img src="https://source.unsplash.com/random/100x100" alt="something here"></img>
-            </div>
 
-            <div className="bannerDescription">
-                <h2>Rob Checco</h2>
-                <p>Software Engineer</p>
-                <div>
-                    <span>A</span>
-                    <span>B</span>
-                    <span>C</span>
-                    <span>D</span>
-                    <span>E</span>
+            <div className="leftBanner">
+                <div className="bannerPhoto">
+                    <img src="https://source.unsplash.com/random/100x100" alt="something here"></img>
+                </div>
+
+                <div className="bannerDescription">
+                    <h2>Rob Checco</h2>
+                    <p>Software Engineer</p>
+                    <div>
+                        <span>A</span>
+                        <span>B</span>
+                        <span>C</span>
+                        <span>D</span>
+                        <span>E</span>
+                    </div>
                 </div>
             </div>
+            
 
             <div className="bannerContactMe">
                 <button>This is a button!</button>
