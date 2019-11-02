@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter } from 'react-router-dom';
-
+import "../styles/App.css";
+import Banner from './Banner';
 
 //import Header from './Header';
 // import Main from './Main';
@@ -9,31 +10,12 @@ import { BrowserRouter } from 'react-router-dom';
 // import UrbanEcon from './UrbanEcon';
 // import ChapterOne from './ChapterOne';
 
-// class App extends Component {
-//     render() {
-//         return (
-//             <BrowserRouter>
-//                 <div className='homepage is-preload'>
-//                     <div id="page-wrapper">
-//                         <div id="header">
-//                             <Header />
-//                         </div>
-//                         <Main />
-//                         <Footer />
-//                     </div>
-                    
-//                 </div>
-//             </BrowserRouter>
-            
-//         );
-//     }
-// }
-
 class App extends Component {
     render() {
         return (
             <BrowserRouter>
-                <div>
+                <div className="wrapper">
+                    <Banner/>
                     <p>Hey! My name is Rob and this is my portfolio! Stay tuned to check out the latest from me! This should trigger a change...</p>
                 </div>
             </BrowserRouter>
