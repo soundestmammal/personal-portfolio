@@ -1,5 +1,10 @@
 .container {
     height: 200px;
     width: 100vw;
-    background-color: slateblue;
+    background-color: #6a5acd;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
