@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import "../styles/Content.css";
 
 const Content = () => {
@@ -24,7 +25,6 @@ const Content = () => {
             
             <div className="rightPane">
                 <div className="location">
-                    <h4>Location</h4>
                     <p>New York, US</p>
                     <p>robert.checco@gmail.com</p>
                     <p>robertchecco.com</p>
@@ -32,7 +32,7 @@ const Content = () => {
 
                 <div className="skills">
                     <h4>Skills</h4>
-                    <h5>C++</h5>
+                    <Link to="/monty"><h5>C++</h5></Link>
                     <h5>Javascript</h5>
                     <h5>Python</h5>
                     <h5>React/Redux</h5>
