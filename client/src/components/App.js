@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
-import { BrowserRouter } from 'react-router-dom';
+// import { BrowserRouter, Route } from 'react-router-dom';
+// import { library } from '@fortawesome/fontawesome-svg-core';
+// import { fabGithub } from '@fortawesome/free-solid-svg-icons';
 import "../styles/App.css";
 import Banner from './Banner';
 import Content from './Content';
+// library.add(fabGithub);
 
 //import Header from './Header';
 // import Main from './Main';
@@ -14,13 +17,11 @@ import Content from './Content';
 class App extends Component {
     render() {
         return (
-            <BrowserRouter>
                 <div className="wrapper">
                     <Banner />
                     <Content />
                     <p>Hey! My name is Rob and this is my portfolio! Stay tuned to check out the latest from me! This should trigger a change...</p>
                 </div>
-            </BrowserRouter>
         )
     }
 }
