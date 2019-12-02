@@ -10,6 +10,7 @@ class ColorGame extends Component {
             isOver: false,
             isAWinner: false,
             player1: true,
+            winningSquare: null
         }
         this.state.squares = new Array(9);
         for(let i = 0; i < 9; i++) {
@@ -18,6 +19,7 @@ class ColorGame extends Component {
                 this.state.squares[i][j] = this.generateRandomNumber();
             }
         }
+        this.state.winningSquare = Math.round(Math.random()*8);
     }
 
     // createDataStructure = () => {
@@ -88,15 +90,45 @@ class ColorGame extends Component {
         )
     }
 
+    renderRBG = () => {
+        const winner = this.state.winningSquare;
+        const item = this.state.squares[winner];
+        return ( <div className="status">{`rgb( ${item[0]}, ${item[1]}, ${item[2]} )`}</div> );
+    }
+
+    handleClick = (i) => {
+        if(i === this.state.winningSquare) {
+            console.log("You picked the correct square");
+            this.setState( {isOver: true} )
+        } else {
+            console.log("You picked the wrong square, you suck.");
+            
+        }
+    }
+
+
     render() {
+        if(this.state.isOver) {
+            return(
+                <div className="over">
+                <div className="status">The game is over you won</div>
+                    {this.renderRBG()}
+                    {this.renderBoard()}
+                    <Link to="/"><button>Click this button to go back to the home page</button></Link>
+                </div>
+            );
+        }
         return(
             <div className="notOver">
                 <div className="status">Welcome to the color game</div>
+                {this.renderRBG()}
                 {this.renderBoard()}
                 <Link to="/"><button>Click this button to go back to the home page</button></Link>
             </div>
         );
+        
     }
 }
 
 export default ColorGame;
+
