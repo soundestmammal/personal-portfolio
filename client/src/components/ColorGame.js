@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import "../css/board.css";
 
 class ColorGame extends Component {
     constructor(props) {
@@ -9,7 +11,10 @@ class ColorGame extends Component {
     }
     render() {
         return(
-            <div>This is a div for the color game</div>
+            <div className="notOver">
+                <div className="status">Welcome to the color game</div>
+                <Link to="/"><button>Click this button to go back to the home page</button></Link>
+            </div>
         );
     }
 }
