@@ -4,6 +4,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Monty from './components/Monty';
 import Chat from './components/Chat';
 import Board from './components/Board';
+import ColorGame from './components/ColorGame';
 import App from './components/App';
 
 ReactDOM.render(
@@ -11,6 +12,7 @@ ReactDOM.render(
         <div>
             <Route exact path="/" component={App} />
             <Route exact path="/tictactoe" component={Board} />
+            <Route exact path="/colorgame" component={ColorGame} />
             <Route exact path="/monty" component={Monty} />
             <Route exact path="/chat" component={Chat} />
         </div>
