@@ -1,6 +1,11 @@
+body {
+    margin: 0;
+}
+
 .boardContainer {
     display: flex;
     flex-direction: column;
+    margin-bottom: 25px;
 }
 
 .board-row {
@@ -33,10 +38,12 @@
     letter-spacing: 2px;
     font-weight: bolder;
     margin-bottom: 25px;
+    align-self: center;
   }
   
   .notOver {
       display: flex;
+      flex-direction: column;
       width: 100vw;
       height: 100vh;
       justify-content: center;
@@ -46,6 +53,7 @@
 
   .over {
     display: flex;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
     justify-content: center;
@@ -56,11 +64,12 @@
 
 .overNoWinner {
     display: flex;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: yellow;
+    background-color: rgb(177, 133, 52);
 }
 
 .boardWrapper {
