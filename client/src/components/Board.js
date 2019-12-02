@@ -11,6 +11,7 @@ class Board extends Component {
             isAWinner: false,
             player1: true,
             squares: Array(9).fill(null),
+            winner: ""
         };
     }
 
@@ -51,7 +52,7 @@ class Board extends Component {
             // If the array contains null, then this will return true. I will flip it.
             // If the array doesn't include null, then the game is over.
             else if (!this.state.squares.includes(null)) {
-                this.setState( { isOver: true })
+                this.setState( { isOver: true, winner: "draw" })
             }
     }
 
@@ -85,12 +86,20 @@ class Board extends Component {
         );
     }
 
+    renderWinnerOrPlayer = (currentPlayer) => {
+        if(this.state.winner === "draw") {
+            return(
+                <div className="status">DRAW</div>
+            );
+        }
+        return(<div className="status">It is {currentPlayer}'s turn</div>)
+    }
+
     renderBoard() {
         const currentPlayer = (this.state.player1 ? "Player 1" : "Player 2");
         return (
             <div className="boardContainer">
-                <div className="status">It is {currentPlayer}'s turn</div>
-
+                {this.renderWinnerOrPlayer(currentPlayer)}
                 <div className="board-row">
                     {this.renderSquare(0)}{this.renderSquare(1)}{this.renderSquare(2)}
                 </div>
@@ -117,8 +126,8 @@ class Board extends Component {
     if(!this.state.isOver && !this.state.isAWinner) {
         return (
             <div className="notOver">
-                {this.renderBackButton()}
                 {this.renderBoard()}
+                {this.renderBackButton()}
             </div>
         );
     // Game is over, but there is not a winner
@@ -126,17 +135,17 @@ class Board extends Component {
         // render yellow
         return (
             <div className="overNoWinner">
-                {this.renderBackButton()}
                 {this.renderBoard()}
-                <button onClick={() => this.setState({ squares: Array(9).fill(null), isOver: false, isAWinner: false, player1: true })}>Play Again</button>
+                {this.renderBackButton()}
+                <button onClick={() => this.setState({ squares: Array(9).fill(null), isOver: false, isAWinner: false, player1: true, winner: "" })}>Play Again</button>
             </div>
         );
     // The game is over, and there is a winner
     } else {
         return (
             <div className="over">
-                {this.renderBackButton()}
                 {this.renderBoard()}
+                {this.renderBackButton()}
                 <button onClick={() => this.setState({ squares: Array(9).fill(null), isOver: false, player1: true, isAWinner: false })}>Play Again</button>
             </div>
         );
