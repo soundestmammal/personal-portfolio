@@ -26,6 +26,7 @@ class App extends Component {
                 <Content />
                 <p>Hey! My name is Rob and this is my portfolio! Stay tuned to check out the latest from me!</p>
                 <Link to="/tictactoe"><button>Click this button to see my tic tac toe project</button></Link>
+                <Link to="/colorgame"><button>Click this button to see my color game project</button></Link>
             </div>
         )
     }
