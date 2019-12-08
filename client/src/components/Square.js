@@ -6,7 +6,7 @@ class Square extends Component {
 
     render() {
         return(
-            <button className="square" onClick={() => this.props.onClick() }>
+            <button className="square" style={{backgroundColor: this.props.styles}} onClick={() => this.props.onClick() }>
                 {this.props.value}
             </button>
         );
@@ -14,3 +14,11 @@ class Square extends Component {
 }
 
 export default Square;
+
+/*
+Ok, just keep in mind that I changed some of this...
+
+There was a props.onClick that would trigger a function... I need to keep that here.
+
+Ok, I undoed a lot. It is still here. If you click on a square it will crash the program.
+*/
