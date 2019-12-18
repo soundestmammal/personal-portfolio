@@ -1,0 +1,44 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    /* background-color: rgb(50, 51, 50); */
+    background-image: "../dumbo.jpg";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.leftBanner {
+    display: flex;
+    flex-direction: row;
+    border: 3px solid red;
+}
+
+.bannerPhoto img {
+    border-radius: 50%;
+}
+
+.bannerContactMe {
+    justify-self: right;
+}
+
+.aboutMeBanner {
+    color: white;
+    font-size: large;
+}
+
+.name {
+    color: white;
+    font: 200;
+    font-size: 3em;
+}
+
+.frontPage {
+    margin-left: 100px;
+}
+
+.background-image {
+    width: 1000px;
+    height: 500px;
+}

@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
-// import { BrowserRouter } from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
+// import { BrowserRouter, Route } from 'react-router-dom';
+// import { library } from '@fortawesome/fontawesome-svg-core';
+// import { fabGithub } from '@fortawesome/free-solid-svg-icons';
+import "../styles/App.css";
+import Banner from './Banner';
+import Content from './Content';
+// library.add(fabGithub);
 
 //import Header from './Header';
 // import Main from './Main';
@@ -9,31 +15,18 @@ import React, { Component } from 'react';
 // import UrbanEcon from './UrbanEcon';
 // import ChapterOne from './ChapterOne';
 
-// class App extends Component {
-//     render() {
-//         return (
-//             <BrowserRouter>
-//                 <div className='homepage is-preload'>
-//                     <div id="page-wrapper">
-//                         <div id="header">
-//                             <Header />
-//                         </div>
-//                         <Main />
-//                         <Footer />
-//                     </div>
-                    
-//                 </div>
-//             </BrowserRouter>
-            
-//         );
-//     }
-// }
+// <Banner />
+// <Content />
 
 class App extends Component {
     render() {
         return (
-            <div>
-                <p>Hey! My name is Rob and this is my portfolio! Stay tuned to check out the latest from me! This should trigger a change...</p>
+            <div className="wrapper">
+                <Banner />
+                <Content />
+                <p>Hey! My name is Rob and this is my portfolio! Stay tuned to check out the latest from me!</p>
+                <Link to="/tictactoe"><button>Click this button to see my tic tac toe project</button></Link>
+                <Link to="/colorgame"><button>Click this button to see my color game project</button></Link>
             </div>
         )
     }
