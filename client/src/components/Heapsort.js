@@ -1,4 +1,4 @@
-// import Button from 'react-bootstrap/Button';
+import Button from 'react-bootstrap/Button';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 // import Image from 'react-bootstrap/Image';
@@ -14,7 +14,23 @@ class Heapsort extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            message: "This is the message for data structures"
+            message: "This is the message for data structures",
+            hiddenSnippet: false
+        }
+    }
+    handleSnippetButton = () => {
+        if(this.state.hiddenSnippet) {
+            this.setState({ hiddenSnippet: false });
+        } else {
+            this.setState({hiddenSnippet: true});
+        }
+        alert("This button was pressed!!!");
+    }
+    showSnippet = () => {
+        // Default, do not show the snippet!!!
+        if(this.state.hiddenSnippet) {
+            return (<EmbeddedGist gist="/soundestmammal/2aba9cc744802d2555311d4dfb8c8565" file="heapsort.cpp"></EmbeddedGist>);
+            // return(<div>I will just retturn a div that has a bunch of text that has no meaning but I need it to fill up some space</div>)
         }
     }
     render() {
@@ -64,7 +80,7 @@ class Heapsort extends Component {
 
                             <h2>Description of the algorithm</h2>
                             
-                            <p>Our function will be called heapsort. It will accept an array of integers to be sorted, and an integer denoting the length of the array. This version of heapsort can be broken into 4 steps.</p>
+                            <p>Our function will be called heapsort. It will accept an array of integers to be sorted, and an integer denoting the length of the array. This version of heapsort can be broken into 3 steps.</p>
                             
                             <div className="stepsHeapsort">
                                 <h3>Step 1</h3>
@@ -73,7 +89,7 @@ class Heapsort extends Component {
                             </div>
                             <div className="stepsHeapsort">
                                 <h3>Step 2</h3>
-                                <p>Swap the max element and the last element in the HEAP and decrement the size of the heap by 1. The has the effect of removing the max item from the heap.</p>
+                                <p>Swap the max element and the last element in the HEAP and decrement the size of the heap by 1. This has the effect of removing the max item from the heap.</p>
                                 <EmbeddedGist gist="/soundestmammal/2aba9cc744802d2555311d4dfb8c8565" file="step2.cpp"></EmbeddedGist>
                             </div>
                             <div className="stepsHeapsort">
@@ -88,8 +104,9 @@ class Heapsort extends Component {
                             <p>The algorithm compares the out of place item to it's left and right children (if they exist). It identifies the index of the largest item of the 3 items in the subtree. </p>
                             <p>Then, I am falling asleep I will write more sometime later. Add the snippet.</p>
                             <EmbeddedGist gist="/soundestmammal/2aba9cc744802d2555311d4dfb8c8565" file="fixOutOfOrderElement.cpp"></EmbeddedGist>
-                            <p>Ok I am really tired but I just want to add a snippet of the entire code. It would be cool to wire up a quick button and only show it on press.</p>
-                            <EmbeddedGist gist="/soundestmammal/2aba9cc744802d2555311d4dfb8c8565" file="heapsort.cpp"></EmbeddedGist>
+                            <p>Ok, if you want to see all of the code for this algorithm, hit the button below to see a snippet of the entire code block.</p>
+                            <Button variant="primary" onClick={this.handleSnippetButton}>SHOW ALL THE CODE!!!</Button>
+                            {this.showSnippet()}
                         </section>
                     </div>
             </div>
