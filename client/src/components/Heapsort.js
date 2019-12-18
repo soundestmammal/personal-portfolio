@@ -24,7 +24,6 @@ class Heapsort extends Component {
         } else {
             this.setState({hiddenSnippet: true});
         }
-        alert("This button was pressed!!!");
     }
     showSnippet = () => {
         // Default, do not show the snippet!!!
