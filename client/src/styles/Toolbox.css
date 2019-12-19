@@ -1,0 +1,27 @@
+.toolboxWrapper {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(18, 18, 87);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerTB {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* This is where I am going to put the code for the skill */
+
+.skillOut {
+    width: 12vw;
+    border: 1px solid white;
+    padding: 50px;
+    /* border-radius: 50%; */
+}
