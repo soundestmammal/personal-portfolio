@@ -38,7 +38,40 @@
     margin-left: 100px;
 }
 
+.picWrap {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+
 .background-image {
-    width: 1000px;
-    height: 500px;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../dumbo.jpg") no-repeat center center;
+    background-size: 100% auto;
+    display: flex;
+}
+
+.innerContent {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.theText {
+    color: white;
+    font-size: 2.1em;
+    letter-spacing: 2px;
+    margin-left: 20px;
+}
+
+.thePara {
+    color: white;
+    font-size: 1.25em;
+    letter-spacing: 1.5px;
+    margin-left: 20px;
+    max-width: 400px;
+    margin-top: 50px;
 }
