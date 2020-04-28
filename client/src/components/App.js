@@ -10,6 +10,10 @@ import Toolbox from './Toolbox';
 // library.add(fabGithub);
 
 import Header from './Header';
+import Introduction from './Introduction';
+import Services from './Services';
+import About from './About';
+import MyWork from './MyWork';
 // import Main from './Main';
 // import Footer from './Footer';
 // import Dashboard from './Dashboard';
@@ -24,6 +28,10 @@ class App extends Component {
         return (
             <div className="wrapper">
                 <Header />
+                <Introduction />
+                <Services />
+                <About />
+                <MyWork />
                 <Banner />
                 <Toolbox />
                 <Content />
