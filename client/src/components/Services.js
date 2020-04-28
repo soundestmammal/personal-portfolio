@@ -3,7 +3,6 @@ import React from 'react';
 const Services = () => {
     return(
         <section className="my-services">
-            <div className="my-services">
                 <h2 className="section__title section__title--services">What I do</h2>
                 <div className="service">
                     <h3>Design + Development</h3>
@@ -17,7 +16,6 @@ const Services = () => {
                     <h3>Data Science</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non doloribus, error incidunt reprehenderit nemo dignissimos consequatur quos atque. Alias mollitia libero voluptatem possimus cumque? In eveniet at quis expedita veritatis.</p>
                 </div>
-            </div>
             <a href="/" className="btn">My Work</a>
         </section>
     );
