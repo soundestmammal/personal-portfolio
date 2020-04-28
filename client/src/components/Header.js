@@ -3,11 +3,22 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <div className="ui inverted menu">
-            <div className='header item'><Link to="/">Robert Checco</Link></div>
-            <div className='header item'><Link to="/farmingdale">Dashboard</Link></div>
-            <div className='header item'><Link to="/farmingdale/urbanecon">Urban Economics</Link></div>
-        </div>
+        <header>
+            <div class="logo">
+                <img src="img/devpic.png" alt="" />
+            </div>
+            <button className="nav-toggle">
+                <span className="hamburger"></span>
+            </button>
+            <nav className="nav">
+                <ul className="nav__list">
+                    <li className="nav__item"><Link to="/" className="nav__link">Home</Link></li>
+                    <li className="nav__item"><Link to="/" className="nav__link">My Services</Link></li>
+                    <li className="nav__item"><Link to="/" className="nav__link">About me</Link></li>
+                    <li className="nav__item"><Link to="/" className="nav__link">My Work</Link></li>
+                </ul>
+            </nav>
+        </header>
     )
 }
 

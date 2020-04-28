@@ -9,7 +9,7 @@ import Content from './Content';
 import Toolbox from './Toolbox';
 // library.add(fabGithub);
 
-//import Header from './Header';
+import Header from './Header';
 // import Main from './Main';
 // import Footer from './Footer';
 // import Dashboard from './Dashboard';
@@ -23,6 +23,7 @@ class App extends Component {
     render() {
         return (
             <div className="wrapper">
+                <Header />
                 <Banner />
                 <Toolbox />
                 <Content />
