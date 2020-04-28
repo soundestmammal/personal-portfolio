@@ -1,4 +1,5 @@
 import React from 'react';
+import Rob from '../rob2.jpg';
 
 const Introduction = () => {
     return (
@@ -7,7 +8,7 @@ const Introduction = () => {
                 Hi, I am <strong>Robert Checco</strong>
             </h1>
             <p className="section__subtitle section__subtitle--intro">software engineer</p>
-            <img src="img/rob-01.jpg" alt="rob smiling"/>
+            <img src={Rob} alt="rob smiling" className="intro__img"/>
         </div>);
 }
 
