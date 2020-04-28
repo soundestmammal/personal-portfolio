@@ -18,7 +18,7 @@ const Services = () => {
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non doloribus, error incidunt reprehenderit nemo dignissimos consequatur quos atque. Alias mollitia libero voluptatem possimus cumque? In eveniet at quis expedita veritatis.</p>
                 </div>
             </div>
-            <a href="#" className="btn">My Work</a>
+            <a href="/" className="btn">My Work</a>
         </section>
     );
 }

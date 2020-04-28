@@ -8,6 +8,7 @@ import Banner from './Banner';
 import Content from './Content';
 import Toolbox from './Toolbox';
 // library.add(fabGithub);
+import "../styles/style.css";
 
 import Header from './Header';
 import Introduction from './Introduction';
