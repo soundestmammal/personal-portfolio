@@ -3,6 +3,9 @@
 
 # design
 /src/portfolio-design-assets
+/src/img
+*.jpg
+*.png
 
 # dependencies
 /node_modules
