@@ -28,9 +28,15 @@ library.add(fab);
 
 
 class App extends Component {
-    state = {
-        toggle: "wrapper"
+    constructor(props) {
+        super(props);
+        this.state = {
+            toggle: "wrapper"
+        }
     }
+    // state = {
+    //     toggle: "wrapper"
+    // }
 
     handleHamburger = () => {
         if(this.state.toggle === "wrapper") {
