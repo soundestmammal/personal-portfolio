@@ -8,18 +8,18 @@ const Services = () => {
             <div className="services">
                 <div className="service">
                     <h3>Client Side</h3>
-                    <p>React and Redux are my favorites here. I love learning new things and things move so fast here I enjoy learning the latest features and keeping up with the latest.</p>
+                    <p>React and Redux for clean user interfaces. Front end scene is always evolving and I love to keep up with the latest javascript.</p>
                 </div>
                 <div className="service">
                     <h3>Data Science</h3>
-                    <p>My social science background gives me a strong foundation to separate the signal from the noise. </p>
+                    <p>Check out my economics research where I used a Neural Network to predict transportation mode choice. I've also worked on a few problems on Kaggle, check it out.</p>
                 </div>
                 <div className="service">
                     <h3>Server Side</h3>
-                    <p>Nodejs and Express are my favorites here. I am interested in building scalable systems to meet the demand for today's business requirements.</p>
+                    <p>I am interested in building scalable systems to meet the demand for today's evergrowing business requirements.</p>
                 </div>
             </div>
-            <a href="/" className="btn">My Work</a>
+            <a href="http://github.com/soundestmammal" className="btn">My Work</a>
         </section>
     );
 }
