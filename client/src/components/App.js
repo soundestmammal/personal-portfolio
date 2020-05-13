@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 // import { BrowserRouter, Route } from 'react-router-dom';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-import Banner from './Banner';
-import Content from './Content';
-import Toolbox from './Toolbox';
+// import Banner from './Banner';
+// import Content from './Content';
+// import Toolbox from './Toolbox';
 
 import "../styles/style.css";
 
@@ -25,22 +25,36 @@ library.add(fab);
 // <Banner />
 // <Content />
 
+
+
 class App extends Component {
+    state = {
+        toggle: "wrapper"
+    }
+
+    handleHamburger = () => {
+        if(this.state.toggle === "wrapper") {
+            this.setState({ toggle: "nav-open" });
+        } else {
+            this.setState({ toggle: "wrapper" });
+        }
+    }
+
     render() {
         return (
-            <div className="wrapper">
-                <Header />
+            <div className={this.state.toggle}>
+                <Header handle={this.handleHamburger}/>
                 <Introduction />
                 <Services />
                 <About />
                 <MyWork />
                 <Footer />
-                <Banner />
-                <Toolbox />
-                <Content />
-                <p>Hey! My name is Rob and this is my portfolio! Stay tuned to check out the latest from me!</p>
-                <Link to="/tictactoe"><button>Click this button to see my tic tac toe project</button></Link>
-                <Link to="/colorgame"><button>Click this button to see my color game project</button></Link>
+                {/* <Banner /> */}
+                {/* <Toolbox /> */}
+                {/* <Content /> */}
+                {/* <p>Hey! My name is Rob and this is my portfolio! Stay tuned to check out the latest from me!</p> */}
+                {/* <Link to="/tictactoe"><button>Click this button to see my tic tac toe project</button></Link> */}
+                {/* <Link to="/colorgame"><button>Click this button to see my color game project</button></Link> */}
             </div>
         )
     }

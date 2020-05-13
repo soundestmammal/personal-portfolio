@@ -1,5 +1,5 @@
 import React from 'react';
-import Rob from '../rob2.jpg';
+import Rob from '../rob3.jpg';
 
 const Introduction = () => {
     return (
@@ -9,7 +9,8 @@ const Introduction = () => {
             </h1>
             <p className="section__subtitle section__subtitle--intro">software engineer</p>
             <img src={Rob} alt="rob smiling" className="intro__img"/>
-        </div>);
+        </div>
+    );
 }
 
 export default Introduction;

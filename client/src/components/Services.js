@@ -2,23 +2,23 @@ import React from 'react';
 import '../styles/style.css';
 
 const Services = () => {
-    return(
+    return (
         <section className="my-services">
-                <h2 className="section__title section__title--services">What I do</h2>
-                    <div className="services">
-                        <div className="service">
-                            <h3>Design + Development</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ipsa aliquid. Illum, assumenda labore. Dignissimos modi omnis vel labore in, cumque similique officia explicabo molestias corporis iure, placeat velit deserunt?</p>
-                        </div>
-                        <div className="service">
-                            <h3>E-Commerce</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, laborum nisi! Rerum veniam explicabo quasi quidem, sit accusantium et necessitatibus ullam, eos officiis repellat illo quo quisquam. Sunt, eius mollitia!</p>
-                        </div>
-                        <div className="service">
-                            <h3>Data Science</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non doloribus, error incidunt reprehenderit nemo dignissimos consequatur quos atque. Alias mollitia libero voluptatem possimus cumque? In eveniet at quis expedita veritatis.</p>
-                        </div>
-                    </div>
+            <h2 className="section__title section__title--services">What I do</h2>
+            <div className="services">
+                <div className="service">
+                    <h3>Client Side</h3>
+                    <p>React and Redux are my favorites here. I love learning new things and things move so fast here I enjoy learning the latest features and keeping up with the latest.</p>
+                </div>
+                <div className="service">
+                    <h3>Data Science</h3>
+                    <p>My social science background gives me a strong foundation to separate the signal from the noise. </p>
+                </div>
+                <div className="service">
+                    <h3>Server Side</h3>
+                    <p>Nodejs and Express are my favorites here. I am interested in building scalable systems to meet the demand for today's business requirements.</p>
+                </div>
+            </div>
             <a href="/" className="btn">My Work</a>
         </section>
     );

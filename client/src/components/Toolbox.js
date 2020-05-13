@@ -1,7 +1,7 @@
 import React from 'react';
 import Skill from './Skill';
-import { FaReact, FaSass, FaPython} from "react-icons/fa";
-import { DiMongodb, DiFirebase, DiPhp, } from "react-icons/di";
+//import { FaReact, FaSass, FaPython} from "react-icons/fa";
+//import { DiMongodb, DiFirebase, DiPhp, } from "react-icons/di";
 import "../styles/Toolbox.css";
 
 const Toolbox = () => {
@@ -9,7 +9,7 @@ const Toolbox = () => {
         <div className="toolboxWrapper">
             <div>This is the toolbox!!!</div>
             <div className="innerTB">
-                <Skill name="React" icon={{FaReact}}/>
+                {/* <Skill name="React" icon={{FaReact}}/> */}
                 <Skill name="Redux"/>
                 <Skill name="React"/>
                 <Skill name="Sass"/>
