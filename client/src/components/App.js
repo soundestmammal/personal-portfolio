@@ -3,10 +3,11 @@ import React, { Component } from 'react';
 // import { BrowserRouter, Route } from 'react-router-dom';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
+// import ReactGA from "react-ga";
 // import Banner from './Banner';
 // import Content from './Content';
 // import Toolbox from './Toolbox';
-
+// import { trackingId } from '../config/keys';
 import "../styles/style.css";
 
 import Header from './Header';
@@ -24,7 +25,6 @@ library.add(fab);
 
 // <Banner />
 // <Content />
-
 
 
 class App extends Component {

@@ -1,7 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ReactGA from 'react-ga';
+import { createBrowserHistory } from 'history';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { trackingId } from './config/keys';
 import Monty from './components/Monty';
 import Chat from './components/Chat';
 import Board from './components/Board';
@@ -14,8 +17,18 @@ import PortfolioItem from './components/PortfolioItem';
 // import Header from './components/Header';
 // import Footer from './components/Footer';
 
+ReactGA.initialize(trackingId);
+ReactGA.pageview(window.location.pathname);
+
+const history = createBrowserHistory();
+
+history.listen(location => {
+    ReactGA.set({ page: location.pathname });
+    ReactGA.pageview(location.pathname);
+})
+
 ReactDOM.render(
-    <BrowserRouter>
+    <BrowserRouter history={history}>
         <div>
             {/* <Header /> */}
             <Switch>
