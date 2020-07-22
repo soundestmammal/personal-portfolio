@@ -13,15 +13,19 @@ import img5 from '../img/portfolio-05.jpg';
 // import img10 from '../img/portfolio-10.jpg';
 
 const MyWork = () => {
+    function openTabInNewTab(url) {
+        var win = window.open(url, '_blank');
+        win.focus();
+    }
     return (
         <section className="my-work">
-            <h2 className="section__title section__title--work">My Work</h2>
+            <h2 className="section__title section__title--work">My Projects</h2>
             <p className="section__subtitle section__subtitle--work">A selection of my range of work</p>
 
             <div className="portfolio">
-                <Link to="/project" className="portfolio__item">
+                <a style={{cursor: 'pointer'}} onClick={() => openTabInNewTab("https://www.c19insights.io")} className="portfolio__item">
                     <img src={img1} alt="First portfolio project" className="portfolio__img"/>
-                </Link>
+                </a>
             
                 <a href="/tictactoe" className="portfolio__item">
                     <img src={img2} alt="First portfolio project" className="portfolio__img"/>

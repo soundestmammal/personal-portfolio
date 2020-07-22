@@ -51,8 +51,8 @@ class App extends Component {
             <div className={this.state.toggle}>
                 <Header handle={this.handleHamburger}/>
                 <Introduction />
-                <Services />
-                <About />
+                {/* <Services /> */}
+                {/* <About /> */}
                 <MyWork />
                 <Footer />
                 {/* <Banner /> */}
