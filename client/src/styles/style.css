@@ -381,8 +381,27 @@ header {
 }
 
 .portfolio__item {
-    background: var(--clr-accent);
+    /* background: var(--clr-accent); */
     overflow: hidden;
+}
+
+.portfolio__item-p {
+    color: pink;
+    position: relative;
+    z-index: 100;
+    top: -200px;
+    color: white;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+.portfolio__item-s {
+    color: pink;
+    position: relative;
+    z-index: 100;
+    top: -50px;
+    color: white;
+    font-size: 2vw;
 }
 
 .portfolio__img {
@@ -399,7 +418,7 @@ header {
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
     transform: scale(1.2);
-    opacity: .5;
+    opacity: .3;
 }
 
 /* footer */
