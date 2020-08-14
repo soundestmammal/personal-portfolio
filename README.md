@@ -1,5 +1,14 @@
-personal-portfolio
+# Personal Website
 
-test test test
+My personal website can be found at https://www.robertchecco.com.
 
-test2...
+### Tech
+
+My personal website uses the following tech stack.
+
+* React
+* Express
+* node.js
+* Nginx
+* Linux
+* Digital Ocean
