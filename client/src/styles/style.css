@@ -112,10 +112,12 @@ h3 { font-size: var(--fs-h3);  font-weight: var(--fw-bold);}
 
 .section__subtitle--intro,
 .section__subtitle--about {
-    background: var(--clr-accent);
+    background: var(--clr-dark);
     padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
+    color: white;
+    letter-spacing: 1px;
 }
 
 /*  header  */
@@ -242,7 +244,7 @@ header {
     .intro {
         display: grid;
         width: min-content;
-        margin: 0 auto;
+        margin: 30px auto 0;
         grid-column-gap: 1em;
         grid-template-areas: 
             "img title"
@@ -410,6 +412,10 @@ header {
         opacity 250ms linear;
 }
 
+.portfolio__img_2 {
+    background-color: red;
+}
+
 .portfolio__item:focus {
     position: relative;
     z-index: 2;
@@ -421,11 +427,125 @@ header {
     opacity: .3;
 }
 
+.portfolio_2 {
+    display: flex;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+
+.card {
+    /* flex: 1 0 33%; */
+    width: 25%;
+    border: 5px solid white;
+    min-height: 40vh;
+    margin: 25px;
+    color: white;
+    background-image: url(https://imgix.datadoghq.com/img/careers/careers_pattern_sales.png?auto=format);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.card-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.project-content {
+    margin-bottom: 3em;
+}
+
+.project-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: .25em;
+}
+
+.project-description {
+    font-size: 1.25em;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.project-button {
+    flex: 1 0 40%;
+    border: 3px solid white;
+    max-width: 40%;
+    padding: 10px 5px;
+    font-weight: bold;
+    font-size: 1.5;
+}
+
+.project-button:hover {
+    background-color: var(--clr-dark);
+    cursor: pointer;
+}
+
+@media (max-width: 1371px) {
+    .card {
+        width: 40%;
+        border: 5px solid white;
+        min-height: 40vh;
+        margin: 20px;
+        color: white;
+        background-image: url(https://imgix.datadoghq.com/img/careers/careers_pattern_sales.png?auto=format);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .portfolio_2 {
+        display: flex;
+        flex-flow: row wrap;
+        box-sizing: border-box;
+        /* margin: 0 150px 0 150px; */
+    }
+
+    .card-content {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .card {
+        width: 100%;
+        border: 5px solid white;
+        min-height: 40vh;
+        margin: 25px;
+        color: white;
+        background-image: url(https://imgix.datadoghq.com/img/careers/careers_pattern_sales.png?auto=format);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .portfolio_2 {
+        display: flex;
+        flex-flow: row wrap;
+        box-sizing: border-box;
+        /* margin: 0 150px 0 150px; */
+    }
+
+    .card-content {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
 /* footer */
 
 .footer {
     background-color: #111;
-    color: var(--clr-accent);
+    color: white;
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
