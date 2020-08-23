@@ -2,6 +2,12 @@ import React from 'react';
 import '../styles/style.css';
 
 const MyWork = () => {
+
+    function openTabInNewTab(url) {
+        var win = window.open(url, '_blank');
+        win.focus();
+    }
+
     return (
         <section className="my-work">
             <h2 className="section__title section__title--work">My Projects</h2>
@@ -58,7 +64,7 @@ const MyWork = () => {
                 <div className="card" style={{ backgroundImage: "url(https://imgix.datadoghq.com/img/careers/careers_pattern_OS.png?auto=format)" }}>
                     <div className="card-content">
                             <div className="project-content">
-                                <h2 className="project-title">Dynamic Vehicle Model</h2>
+                                <h2 className="project-title">Dynamic Modeling</h2>
                                 <p className="project-description">Vehicle accepts throttle input and steps through longitudinal dynamic equations.</p>
                             </div>
                             <div className="button-container">
