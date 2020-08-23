@@ -2,10 +2,6 @@ import React from 'react';
 import '../styles/style.css';
 
 const MyWork = () => {
-    function openTabInNewTab(url) {
-        var win = window.open(url, '_blank');
-        win.focus();
-    }
     return (
         <section className="my-work">
             <h2 className="section__title section__title--work">My Projects</h2>
