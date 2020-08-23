@@ -66,8 +66,8 @@ const MyWork = () => {
                                 <p className="project-description">Vehicle accepts throttle input and steps through longitudinal dynamic equations.</p>
                             </div>
                             <div className="button-container">
-                                <div className="project-button" onClick={() => openTabInNewTab("https://github.com/soundestmammal/dynamic-vehicle-modeling")}>View Project</div>
-                                <div className="project-button" onClick={() => openTabInNewTab("https://github.com/soundestmammal/dynamic-vehicle-modeling")}>View Code</div>
+                                <div className="project-button" onClick={() => openTabInNewTab("https://github.com/soundestmammal/dynamic-vehicle-modeling/blob/master/Longitudinal%20Vehicle%20Model.ipynb")}>View Project</div>
+                                <div className="project-button" onClick={() => openTabInNewTab("https://github.com/soundestmammal/dynamic-vehicle-modeling/blob/master/Longitudinal%20Vehicle%20Model.ipynb")}>View Code</div>
                             </div>
                     </div>
                 </div>                
