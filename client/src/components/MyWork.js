@@ -53,7 +53,7 @@ const MyWork = () => {
                     <div className="card-content">
                             <div className="project-content">
                                 <h2 className="project-title">Mode Choice</h2>
-                                <p className="project-description">A comparision of three different models Logisic Regression, Support Vector Machine, and Neural Network to predict how people travel to work.</p>
+                                <p className="project-description">A comparision of three different models: Logistic Regression, Support Vector Machine, and Neural Network to predict how people travel to work.</p>
                             </div>
                             <div className="button-container">
                                 <div className="project-button" onClick={() => openTabInNewTab("https://github.com/soundestmammal/Mode_Choice/blob/master/Mode_Choice_Paper.pdf")}>View Project</div>
