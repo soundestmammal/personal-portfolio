@@ -14,3 +14,15 @@ after_success:
   - docker build -t soundestmammal/portfolio ./client
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   - docker push soundestmammal/portfolio
+
+deploy:
+  provider: elasticbeanstalk
+  region: us-east-2
+  app: portfolio
+  env: Portfolio-env
+  bucket_name: elasticbeanstalk-us-east-2-670541471230
+  bucket_path: portfolio
+  on:
+    branch: version3
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
