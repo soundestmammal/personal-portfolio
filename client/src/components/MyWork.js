@@ -20,7 +20,7 @@ const MyWork = () => {
                             <p className="project-description">Oasis is a data driven service to identify restaurants that provide safe gluten-free options.</p>
                         </div>
                         <div className="button-container">
-                            <div className="project-button" onClick={() => openTabInNewTab("https://www.oasisglutenfree.com")}>View Project</div>
+                            <div className="project-button" onClick={() => openTabInNewTab("http://www.oasisglutenfree.com")}>View Project</div>
                             <div className="project-button" onClick={() => openTabInNewTab("https://www.github.com/soundestmammal/oasis")}>View Code</div>
                         </div>
                     </div>
@@ -32,7 +32,7 @@ const MyWork = () => {
                             <p className="project-description">An interactive dashboard to visualize COVID-19 trends in the United States.</p>
                         </div>
                         <div className="button-container">
-                            <div className="project-button" onClick={() => openTabInNewTab("https://www.c19insights.io")}>View Project</div>
+                            <div className="project-button" onClick={() => openTabInNewTab("http://www.c19insights.io")}>View Project</div>
                             <div className="project-button" onClick={() => openTabInNewTab("https://www.github.com/soundestmammal/covid19insights")}>View Code</div>
                         </div>
                     </div>
