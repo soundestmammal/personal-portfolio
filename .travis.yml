@@ -1,0 +1,16 @@
+sudo: required
+services:
+  - docker
+
+# Build image to be tested
+before_install:
+  - docker build -t soundestmammal/portfolio-test -f ./client/Dockerfile.dev ./client
+
+# Run test here
+script:
+  - docker run -e CI=true soundestmammal/portfolio-test npm test
+
+after_success:
+  - docker build -t soundestmammal/portfolio ./client
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  - docker push soundestmammal/portfolio
