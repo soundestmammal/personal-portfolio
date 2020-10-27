@@ -27,7 +27,7 @@ zip -r app_v_$CIRCLE_BUILD_NUM.zip Dockerrun.aws.json
 aws s3 cp ./app_v_$CIRCLE_BUILD_NUM.zip s3://$S3_BUCKET/portfolio/
 
 # creating a new Beanstalk version from the configuration we uploaded to s3
-aws elasticbeanstalk create-application-version --application-name "c19insights" --version-label v$CIRCLE_BUILD_NUM --description="New Version number $CIRCLE_BUILD_NUM" --source-bundle S3Bucket=$S3_BUCKET,S3Key="portfolio/app_v_$CIRCLE_BUILD_NUM.zip" --auto-create-application --region="us-east-2"
+aws elasticbeanstalk create-application-version --application-name "portfolio" --version-label v$CIRCLE_BUILD_NUM --description="New Version number $CIRCLE_BUILD_NUM" --source-bundle S3Bucket=$S3_BUCKET,S3Key="portfolio/app_v_$CIRCLE_BUILD_NUM.zip" --auto-create-application --region="us-east-2"
 
 # deploying the new version to the given environment
 aws elasticbeanstalk update-environment --application-name "portfolio" --environment-name "Portfolio-env" --version-label v$CIRCLE_BUILD_NUM --region="us-east-2"
