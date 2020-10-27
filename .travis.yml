@@ -4,14 +4,14 @@ services:
 
 # Build image to be tested
 before_install:
-  - docker build -t soundestmammal/portfolio-test -f ./client/Dockerfile.dev ./client
+  - docker build -t soundestmammal/portfolio-test -f Dockerfile.dev .
 
 # Run test here
 script:
   - docker run -e CI=true soundestmammal/portfolio-test npm test
 
 after_success:
-  - docker build -t soundestmammal/portfolio ./client
+  - docker build -t soundestmammal/portfolio .
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   - docker push soundestmammal/portfolio
 
