@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run:
           command: |
-            docker build -t soundestmammal/portfolio-test -f Dockerfile.dev ./client
+            docker build -t soundestmammal/portfolio-test -f ./client/Dockerfile.dev ./client
             docker run -e CI=true soundestmammal/portfolio-test npm test
   upload_images:
     machine:
