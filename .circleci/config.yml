@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run:
           command: |
-            docker build -t soundestmammal/portfolio-test -f Dockerfile.dev .
+            docker build -t soundestmammal/portfolio-test -f Dockerfile.dev ./client
             docker run -e CI=true soundestmammal/portfolio-test npm test
   upload_images:
     machine:
@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run:
           command: |
-            docker build -t soundestmammal/portfolio .
+            docker build -t soundestmammal/portfolio ./client
             echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
             docker push soundestmammal/portfolio
   deploy:
@@ -33,7 +33,7 @@ workflows:
     jobs:
       - test_client
       - upload_images:
-          requires: 
+          requires:
             - test_client
       - deploy:
           requires:
