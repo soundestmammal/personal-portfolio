@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import rob from '../rob3.jpg';
-import rLogo from '../r_logo.svg';
+import rLogo from '../R_logo.svg';
 
 const SpotlightContainer = styled.div`
     width: 100%;
