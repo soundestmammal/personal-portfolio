@@ -61,7 +61,7 @@ export default function Projects() {
                     <h1>COVID-19 Insights</h1>
                     <>
                         <a href="http://www.c19insights.io">View Project</a>
-                        <a href="http://www.github.com/soundestmammal/c19insights">View Code</a>
+                        <a href="http://www.github.com/soundestmammal/covid19insights">View Code</a>
                     </>
                 </Project>
             </ProjectContainer>
