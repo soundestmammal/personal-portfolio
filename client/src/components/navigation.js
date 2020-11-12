@@ -20,6 +20,7 @@ const Row = styled.ul`
     display: flex;
     flex-direction: row;
     @media (max-width: 500px) {
+        padding: 0 40px;
         width: 100%;
         justify-content: space-between;
     }
