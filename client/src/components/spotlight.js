@@ -20,6 +20,9 @@ const SpotlightContent = styled.div`
     display: flex;
     flex-direction: column;
     width: 60%;
+        @media (max-width: 500px) {
+            width: 100%;
+    }
 `;
 
 const SpotlightMe = styled.div`
@@ -69,6 +72,15 @@ const SpotlightIconRow = styled.ul`
     color: white;
 `;
 
+const SpotlightImage = styled.img`
+    height: 225px;
+    width: auto;
+    borderRadius: 8px;
+    @media (max-width: 500px) {
+        display: none;
+    }
+`;
+
 const SpotlightCallToAction = styled.p`
 
 `;
@@ -93,7 +105,7 @@ export default function Spotlight() {
                     <li><a href="https://drive.google.com/file/d/1gaEg-RmD3IkHAFP_fPfU7SvpNcNy8f-F/view?usp=sharing" target="_blank" style={{ fontSize: '1em', border: '1px solid #AAAAAA', color: '#AAAAAA', padding: '3px 6px', textDecoration: 'none'}}>Resume</a></li>
                 </SpotlightIconRow>
             </SpotlightContent>
-            <img src={rob} alt="rob at zion national park" style={{ height: '225px', width: 'auto', borderRadius: '8px'}}/>
+            <SpotlightImage src={rob} alt="rob at zion national park" />
         </SpotlightContainer>
     );
 }

@@ -18,6 +18,10 @@ const Wrapper = styled.div`
 const Container = styled.div`
     margin: 0 auto;
     max-width: 850px;
+
+    @media (max-width: 850px) {
+        margin: 0px 20px;
+  }
 `;
 
 export default function Layout({ children }) {

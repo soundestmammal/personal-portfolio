@@ -10,17 +10,27 @@ const NavigationRow = styled.nav`
     justify-content: flex-end;
     align-items: center;
     height: 100px;
+    @media (max-width: 500px) {
+        justify-content: center;
+    }
 `;
 
 const Row = styled.ul`
     list-style-type: none;
     display: flex;
     flex-direction: row;
+    @media (max-width: 500px) {
+        width: 100%;
+        justify-content: space-between;
+    }
 `;
 
 const NavItem = styled.li`
     font-size: 1.2em;
     margin-left: 1em;
+    @media (max-width: 500px) {
+        margin-left: 0;
+    }
 `;
 
 const StyledLink = styled(props => <Link {...props} />)`
