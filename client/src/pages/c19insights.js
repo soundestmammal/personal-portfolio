@@ -24,7 +24,7 @@ export default function Oasis() {
     return (
         <>
         <Helmet>
-            <title>Oasis | Robert Checco</title>        
+            <title>COVID-19 Insights | Robert Checco</title>        
         </Helmet>
         <Layout>
             <div style={{height: '100vh'}}>
