@@ -1,8 +1,12 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
+import { Link } from 'gatsby'
+
+import coronavirus from '../novelcoronavirus-optimized.jpg';
+import oasisPic from '../palm.svg';
 
 const Description = styled.div`
-    padding-bottom: 3em;
+    margin: 2em 0 1em;
 `;
 
 const Title = styled.h1`
@@ -17,23 +21,44 @@ const Subtitle = styled.h2`
 `;
 
 const ProjectContainer = styled.div`
-    width: 100%;
-    height: 300px;
-    background: #DEF6FF;
     margin-top: 2em;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-gap: 10%;
+`;
+
+const Project = styled.div`
+    height: 400px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+`;
+
+const ProjectImage = styled.div`
+    height: 250px;
+    width: 100%;
+    border-radius: 16px;
+    background: white;
+    display: flex;
     justify-content: center;
     align-items: center;
 `;
 
-const Project = styled.div`
-    width: 400px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+const LinkWrapper = styled(props => <Link {...props} />)`
+    text-decoration: none;
+    color: #E2DFDF;
+    display: block;
+    height: 300px;
+    width: 100%;
+`;
+
+const ViewProject = styled.h2`
+    font-size: 1em;
+    color: #AAAAAA;
+    line-height: 1.5em;
+    border-bottom: 2px solid transparent;
+    text-transform: uppercase;
 `;
 
 export default function Projects() {
@@ -49,20 +74,22 @@ export default function Projects() {
             </Description>
             <ProjectContainer>
                 <Project>
-                    <h1>Oasis</h1>
-                    <>
-                        <a href="http://www.oasisglutenfree.com">View Project</a>
-                        <a href="http://www.github.com/soundestmammal/oasis">View Code</a>
-                    </>
+                    <LinkWrapper to="/oasis">
+                        <ProjectImage style={{background: 'cornsilk'}}>
+                            <img src={oasisPic} style={{width: '150px'}}/>
+                        </ProjectImage>
+                        <Title>Oasis</Title>
+                    </LinkWrapper>
+                    <Subtitle>Oasis is a web application where users can find restaurants that provide gluten free menu options.</Subtitle>
                 </Project>
-            </ProjectContainer>
-            <ProjectContainer>
                 <Project>
-                    <h1>COVID-19 Insights</h1>
-                    <>
-                        <a href="http://www.c19insights.io">View Project</a>
-                        <a href="http://www.github.com/soundestmammal/covid19insights">View Code</a>
-                    </>
+                    <LinkWrapper to="/c19insights">
+                    <ProjectImage>
+                        <img src={coronavirus} style={{width: '300px'}}/>
+                    </ProjectImage>
+                        <Title>COVID-19 Insights</Title>
+                    </LinkWrapper>
+                    <Subtitle>A dashboard in the browser for viewing COVID-19 trends within the United States.</Subtitle>
                 </Project>
             </ProjectContainer>
         </>

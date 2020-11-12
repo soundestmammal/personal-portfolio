@@ -4,10 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import rob from '../rob3.jpg';
 import rLogo from '../R_logo.svg';
+import { faBorderNone } from '@fortawesome/free-solid-svg-icons';
 
 const SpotlightContainer = styled.div`
     width: 100%;
-    height 400px;
+    height 300px;
     color: white;
     display: flex;
     flex-direction: row;
@@ -63,6 +64,7 @@ const SpotlightIconRow = styled.ul`
     padding: 0;
     display: flex;
     flex-direction: row;
+    align-items: center;
     width: 50%;
     color: white;
 `;
@@ -82,12 +84,13 @@ export default function Spotlight() {
                         <SpotlightSubtitle>Software Engineer</SpotlightSubtitle>
                     </SpotlightIntroWrapper>
                 </SpotlightMe>
-                <SpotlightIntro>Recent graduate of Farmingdale State College.</SpotlightIntro>
+                <SpotlightIntro>Recent graduate of <a href="http://www.farmingdale.edu" style={{color: 'inherit'}}>Farmingdale State College.</a></SpotlightIntro>
                 <SpotlightIntro>I'm looking for a software engineering role within a rockstar team... <a style={{ color: 'white' }} href="mailto:robertchecco.code@gmail.com">Let's chat about it</a> 👋.</SpotlightIntro>
                 <SpotlightIconRow>
-                    <li><a href="https://www.github.com/soundestmammal" style={{ color: '#AAAAAA', fontSize: '1.25em', marginRight: '1.5em' }}><FontAwesomeIcon icon={['fab', 'github']}/></a></li>
-                    <li><a href="https://www.linkedin.com/in/robertchecco/" style={{ color: '#AAAAAA', fontSize: '1.25em', marginRight: '1.5em'  }}><FontAwesomeIcon icon={['fab', 'linkedin']} /></a></li>
-                    <li><a href="https://www.kaggle.com/robertchecco" style={{color: '#AAAAAA', fontSize: '1.25em'}}><FontAwesomeIcon icon={['fab', 'kaggle']} /></a></li>
+                    <li><a href="https://www.github.com/soundestmammal" target="_blank" style={{ color: '#AAAAAA', fontSize: '1.25em', marginRight: '1.5em' }}><FontAwesomeIcon icon={['fab', 'github']}/></a></li>
+                    <li><a href="https://www.linkedin.com/in/robertchecco/" target="_blank" style={{ color: '#AAAAAA', fontSize: '1.25em', marginRight: '1.5em'  }}><FontAwesomeIcon icon={['fab', 'linkedin']} /></a></li>
+                    <li><a href="https://www.kaggle.com/robertchecco" target="_blank" style={{ color: '#AAAAAA', fontSize: '1.25em', marginRight: '1.5em' }}><FontAwesomeIcon icon={['fab', 'kaggle']} /></a></li>
+                    <li><a href="https://drive.google.com/file/d/1gaEg-RmD3IkHAFP_fPfU7SvpNcNy8f-F/view?usp=sharing" target="_blank" style={{ fontSize: '1em', border: '1px solid #AAAAAA', color: '#AAAAAA', padding: '3px 6px', textDecoration: 'none'}}>Resume</a></li>
                 </SpotlightIconRow>
             </SpotlightContent>
             <img src={rob} alt="rob at zion national park" style={{ height: '225px', width: 'auto', borderRadius: '8px'}}/>
