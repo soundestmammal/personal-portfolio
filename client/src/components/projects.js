@@ -25,6 +25,11 @@ const ProjectContainer = styled.div`
     display: grid;
     grid-template-columns: 45% 45%;
     grid-gap: 10%;
+
+    @media (max-width: 700px) {
+        grid-template-columns: 100%;
+        grid-gap: 0;
+    }
 `;
 
 const Project = styled.div`
