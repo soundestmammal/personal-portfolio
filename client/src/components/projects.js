@@ -2,8 +2,8 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { Link } from 'gatsby'
 
-import coronavirus from '../novelcoronavirus-optimized.jpg';
-import oasisPic from '../palm.svg';
+import coronavirus from '../assets/novelcoronavirus-optimized.jpg';
+import oasisPic from '../assets/palm.svg';
 
 const Description = styled.div`
     margin: 2em 0 1em;

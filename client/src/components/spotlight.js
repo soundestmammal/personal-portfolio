@@ -2,8 +2,8 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import rob from '../rob3.jpg';
-import rLogo from '../R_logo.svg';
+import rob from '../assets/rob3.jpg';
+import rLogo from '../assets/R_logo.svg';
 import { faBorderNone } from '@fortawesome/free-solid-svg-icons';
 
 const SpotlightContainer = styled.div`
@@ -75,7 +75,7 @@ const SpotlightIconRow = styled.ul`
 const SpotlightImage = styled.img`
     height: 225px;
     width: auto;
-    borderRadius: 8px;
+    border-radius: 16px;
     @media (max-width: 500px) {
         display: none;
     }

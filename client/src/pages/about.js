@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Layout from '../components/layout';
-import rLogo from '../R_logo.svg';
+import rLogo from '../assets/R_logo.svg';
 
 const Heading = styled.h1`
     font-size: 3em;
