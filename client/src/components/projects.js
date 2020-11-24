@@ -9,11 +9,6 @@ const Description = styled.div`
     margin: 2em 0 1em;
 `;
 
-const Title = styled.h1`
-    font-size: 1.5em;
-    color: #E2DFDF;
-`;
-
 const Subtitle = styled.h2`
     font-size: 1em;
     color: #AAAAAA;
@@ -50,7 +45,7 @@ const ProjectImage = styled.div`
     align-items: center;
 `;
 
-const LinkWrapper = styled(props => <Link {...props} />)`
+const LinkWrapper = styled.a`
     text-decoration: none;
     color: #E2DFDF;
     display: block;
@@ -66,9 +61,34 @@ const ViewProject = styled.h2`
     text-transform: uppercase;
 `;
 
+const Title = styled.h1`
+    font-size: 1.5em;
+    color: #E2DFDF;
+
+    ${LinkWrapper}:hover & {
+        text-decoration: underline;
+    }
+`;
+
+const LinkRow = styled.div`
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+`;
+
+const LinkText = styled.a`
+    font-size: 1em;
+    color: #E2DFDF;
+    text-decoration: none;
+
+    :hover {
+        text-decoration: underline;
+    }
+`;
+
 export default function Projects() {
     return (
-        <>
+        <div>
             <Description>
                 <Title>Recent work</Title>
                 <Subtitle>
@@ -79,24 +99,32 @@ export default function Projects() {
             </Description>
             <ProjectContainer>
                 <Project>
-                    <LinkWrapper to="/oasis">
+                    <LinkWrapper href="http://www.oasisglutenfree.com" target="_blank">
                         <ProjectImage style={{background: 'cornsilk'}}>
                             <img src={oasisPic} style={{width: '150px'}}/>
                         </ProjectImage>
                         <Title>Oasis</Title>
                     </LinkWrapper>
                     <Subtitle>Oasis is a web application where users can find restaurants that provide gluten free menu options.</Subtitle>
+                    <LinkRow>
+                        <LinkText href="http://www.oasisglutenfree.com" target="_blank">View Project</LinkText>
+                        <LinkText href="http://www.github.com/soundestmammal/oasis" target="_blank">View Code</LinkText>
+                    </LinkRow>
                 </Project>
                 <Project>
-                    <LinkWrapper to="/c19insights">
+                    <LinkWrapper href="http://www.c19insights.io" target="_blank">
                     <ProjectImage>
                         <img src={coronavirus} style={{width: '300px'}}/>
                     </ProjectImage>
                         <Title>COVID-19 Insights</Title>
                     </LinkWrapper>
                     <Subtitle>A dashboard in the browser for viewing COVID-19 trends within the United States.</Subtitle>
+                    <LinkRow>
+                        <LinkText href="http://www.c19insights.io" target="_blank">View Project</LinkText>
+                        <LinkText href="http://www.github.com/soundestmammal/covid19insights" target="_blank">View Code</LinkText>
+                    </LinkRow>
                 </Project>
             </ProjectContainer>
-        </>
+        </div>
     );
 }

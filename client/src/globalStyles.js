@@ -4,7 +4,7 @@ const GlobalStyle = createGlobalStyle`
     body {
         margin: 0;
         padding: 0;
-        background: white;
+        background: rgb(32,32,32);
         font-family: Roboto;
     }
 
