@@ -8,6 +8,7 @@ library.add(fab, fas);
 
 import GlobalStyle from '../globalStyles';
 import Navigation from './navigation';
+import Footer from './Footer';
 
 const Wrapper = styled.div`
     margin: 0;
@@ -33,6 +34,7 @@ export default function Layout({ children }) {
                 <Container>
                     <Navigation />
                     {children}
+                    <Footer />
                 </Container>
             </Wrapper>
         </>
