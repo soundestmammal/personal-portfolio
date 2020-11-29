@@ -97,7 +97,7 @@ export default function Spotlight() {
                     </SpotlightIntroWrapper>
                 </SpotlightMe>
                 <SpotlightIntro>Recent graduate of <a href="http://www.farmingdale.edu" style={{color: 'inherit'}}>Farmingdale State College.</a></SpotlightIntro>
-                <SpotlightIntro>I'm looking for a software engineering role in a great team.  <a style={{ color: 'white' }} href="mailto:robertchecco.code@gmail.com">Let's chat about it</a> 👋.</SpotlightIntro>
+                <SpotlightIntro>I'm looking for a software engineering role.  <a style={{ color: 'white' }} href="mailto:robertchecco.code@gmail.com">Let's chat</a> 👋.</SpotlightIntro>
                 <SpotlightIconRow>
                     <li><a href="https://www.github.com/soundestmammal" target="_blank" style={{ color: '#AAAAAA', fontSize: '1.25em', marginRight: '1.5em' }}><FontAwesomeIcon icon={['fab', 'github']}/></a></li>
                     <li><a href="https://www.linkedin.com/in/robertchecco/" target="_blank" style={{ color: '#AAAAAA', fontSize: '1.25em', marginRight: '1.5em'  }}><FontAwesomeIcon icon={['fab', 'linkedin']} /></a></li>

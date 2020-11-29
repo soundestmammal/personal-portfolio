@@ -77,12 +77,12 @@ const LinkRow = styled.div`
 `;
 
 const LinkText = styled.a`
-    font-size: 1em;
-    color: #E2DFDF;
-    text-decoration: none;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: underline;
 
     :hover {
-        text-decoration: underline;
+        color: #E2DFDF;
     }
 `;
 
