@@ -33,6 +33,9 @@ const Project = styled.div`
     flex-direction: column;
     align-items: flex-start;
     color: white;
+    @media (max-width: 500px) {
+        margin-bottom: 2em;
+    }
 `;
 
 const ProjectImage = styled.div`
