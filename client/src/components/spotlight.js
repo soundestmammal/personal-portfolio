@@ -8,18 +8,18 @@ import { faBorderNone } from '@fortawesome/free-solid-svg-icons';
 
 const SpotlightContainer = styled.div`
     width: 100%;
-    height 300px;
     color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 2em;
+    margin-bottom: 4em;
 `;
 
 const SpotlightContent = styled.div`
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 66%;
         @media (max-width: 500px) {
             width: 100%;
     }
@@ -57,13 +57,16 @@ const SpotlightSubtitle = styled.h1`
 const SpotlightIntro = styled.p`
     margin-bottom 1em;
     color: #E2DFDF;
-    font-size: 1.25em;
+    font-size: 1.2em;
     line-height: 1.5em;
+    @media (max-width: 500px) {
+        font-size: 1.1em;
+    }
 `;
 
 const SpotlightIconRow = styled.ul`
     list-style-type: none;
-    margin-top: 2em;
+    margin-top: 1em;
     padding: 0;
     display: flex;
     flex-direction: row;
@@ -96,8 +99,9 @@ export default function Spotlight() {
                         <SpotlightSubtitle>Software Engineer</SpotlightSubtitle>
                     </SpotlightIntroWrapper>
                 </SpotlightMe>
-                <SpotlightIntro>Recent graduate of <a href="http://www.farmingdale.edu" style={{color: 'inherit'}}>Farmingdale State College.</a></SpotlightIntro>
-                <SpotlightIntro>I'm looking for a software engineering role.  <a style={{ color: 'white' }} href="mailto:robertchecco.code@gmail.com">Let's chat</a> 👋.</SpotlightIntro>
+                <SpotlightIntro>Recent graduate of <a href="http://www.farmingdale.edu" style={{ color: 'inherit' }}>Farmingdale State College</a> and currently working as a Software Engineer.</SpotlightIntro>
+                <SpotlightIntro>I’m interested in real-time distributed systems, machine learning and autonomous vehicles.</SpotlightIntro>
+                <SpotlightIntro>I love meeting new people <a style={{ color: 'white' }} href="mailto:robertchecco.code@gmail.com">let's chat!</a> 👋.</SpotlightIntro>
                 <SpotlightIconRow>
                     <li><a href="https://www.github.com/soundestmammal" target="_blank" style={{ color: '#AAAAAA', fontSize: '1.25em', marginRight: '1.5em' }}><FontAwesomeIcon icon={['fab', 'github']}/></a></li>
                     <li><a href="https://www.linkedin.com/in/robertchecco/" target="_blank" style={{ color: '#AAAAAA', fontSize: '1.25em', marginRight: '1.5em'  }}><FontAwesomeIcon icon={['fab', 'linkedin']} /></a></li>
