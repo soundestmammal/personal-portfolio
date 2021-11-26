@@ -110,7 +110,6 @@ export default function Projects() {
                     </LinkWrapper>
                     <Subtitle>Oasis is a web application where users can find restaurants that provide gluten free menu options.</Subtitle>
                     <LinkRow>
-                        <LinkText href="http://www.oasisglutenfree.com" target="_blank">View Project</LinkText>
                         <LinkText href="http://www.github.com/soundestmammal/oasis" target="_blank">View Code</LinkText>
                     </LinkRow>
                 </Project>
@@ -123,7 +122,6 @@ export default function Projects() {
                     </LinkWrapper>
                     <Subtitle>A dashboard in the browser for viewing COVID-19 trends within the United States.</Subtitle>
                     <LinkRow>
-                        <LinkText href="http://www.c19insights.io" target="_blank">View Project</LinkText>
                         <LinkText href="http://www.github.com/soundestmammal/covid19insights" target="_blank">View Code</LinkText>
                     </LinkRow>
                 </Project>
