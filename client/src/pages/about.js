@@ -161,9 +161,6 @@ export default function About() {
                     Both of these projects taught me a lot about bringing a project from an idea, through the development process and finally delivering the service to live users around the world.
                     </Content>
 
-                    <Content>I am looking to continue this journey as a software engineer. I am looking for a full-time role and you can reach out to me here.</Content>
-
-
             </div>
         </Layout>
         </>

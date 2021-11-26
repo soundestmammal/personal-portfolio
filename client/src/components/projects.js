@@ -1,6 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
-import { Link } from 'gatsby'
+import styled from 'styled-components';
 
 import coronavirus from '../assets/novelcoronavirus-optimized.jpg';
 import oasisPic from '../assets/palm.svg';
