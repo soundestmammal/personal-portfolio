@@ -101,7 +101,7 @@ export default function Projects() {
             </Description>
             <ProjectContainer>
                 <Project>
-                    <LinkWrapper href="http://www.oasisglutenfree.com" target="_blank">
+                    <LinkWrapper href="http://www.github.com/soundestmammal/oasis" target="_blank">
                         <ProjectImage style={{background: 'cornsilk'}}>
                             <img src={oasisPic} style={{width: '150px'}}/>
                         </ProjectImage>
@@ -113,7 +113,7 @@ export default function Projects() {
                     </LinkRow>
                 </Project>
                 <Project>
-                    <LinkWrapper href="http://www.c19insights.io" target="_blank">
+                    <LinkWrapper href="http://www.github.com/soundestmammal/covid19insights" target="_blank">
                     <ProjectImage>
                         <img src={coronavirus} style={{width: '300px'}}/>
                     </ProjectImage>
