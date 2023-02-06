@@ -95,7 +95,7 @@ export default function Spotlight() {
                 <SpotlightMe>
                     <img src={rLogo} style={{ marginRight: '1.5em'}} />
                     <SpotlightIntroWrapper>
-                        <SpotlightTitle>Robert Checco</SpotlightTitle>
+                        <SpotlightTitle>Rob Checco</SpotlightTitle>
                         <SpotlightSubtitle>Software Engineer</SpotlightSubtitle>
                     </SpotlightIntroWrapper>
                 </SpotlightMe>
