@@ -46,7 +46,7 @@ export default function Footer() {
                 <FooterIconRow>
                     <li><a href="https://www.github.com/soundestmammal" target="_blank" style={{ color: '#AAAAAA', fontSize: '1.25em', marginRight: '1.5em' }}><FontAwesomeIcon icon={['fab', 'github']}/></a></li>
                     <li><a href="https://www.linkedin.com/in/robertchecco/" target="_blank" style={{ color: '#AAAAAA', fontSize: '1.25em', marginRight: '1.5em'  }}><FontAwesomeIcon icon={['fab', 'linkedin']} /></a></li>
-                    <li><a href="https://drive.google.com/file/d/1gaEg-RmD3IkHAFP_fPfU7SvpNcNy8f-F/view?usp=sharing" target="_blank" style={{ fontSize: '1em', border: '1px solid #AAAAAA', color: '#AAAAAA', padding: '3px 6px', textDecoration: 'none'}}>Resume</a></li>
+                    <li><a href="https://drive.google.com/file/d/1awQCGjglfh7EYuWCH56CHuYo1pwUB7rm/view?usp=sharing" target="_blank" style={{ fontSize: '1em', border: '1px solid #AAAAAA', color: '#AAAAAA', padding: '3px 6px', textDecoration: 'none'}}>Resume</a></li>
                 </FooterIconRow>
             </FooterContent>
         </FooterContainer>
