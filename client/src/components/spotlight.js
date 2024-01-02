@@ -100,7 +100,7 @@ export default function Spotlight() {
                     </SpotlightIntroWrapper>
                 </SpotlightMe>
                 <SpotlightIntro>Full Stack Software Engineer @ <a href="http://www.impel.io" style={{ color: 'white' }}>Impel</a>.</SpotlightIntro>
-                <SpotlightIntro>Graduate of <a href="http://www.farmingdale.edu" style={{ color: 'white' }}>Farmingdale State College</a>.</SpotlightIntro>
+                <SpotlightIntro>Graduate of <a href="http://www.farmingdale.edu" style={{ color: 'white' }}>Farmingdale State College 🐏</a>.</SpotlightIntro>
                 <SpotlightIntro>I’m interested in cryptoeconomics, autonomous vehicles, and building the future.</SpotlightIntro>
                 <SpotlightIntro>I love meeting new people <a style={{ color: 'white' }} href="mailto:robertchecco.code@gmail.com">let's chat!</a> 👋.</SpotlightIntro>
                 <SpotlightIconRow>
