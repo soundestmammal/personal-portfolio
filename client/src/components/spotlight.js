@@ -58,7 +58,7 @@ const SpotlightIntro = styled.p`
     margin-bottom 1em;
     color: #E2DFDF;
     font-size: 1.2em;
-    line-height: 1.5em;
+    line-height: 1.2em;
     @media (max-width: 500px) {
         font-size: 1.1em;
     }
@@ -99,9 +99,9 @@ export default function Spotlight() {
                         <SpotlightSubtitle>Software Engineer</SpotlightSubtitle>
                     </SpotlightIntroWrapper>
                 </SpotlightMe>
-                <SpotlightIntro>Full Stack Software Engineer @ <a href="http://www.impel.io" style={{ color: 'white' }}>Impel</a></SpotlightIntro>
+                <SpotlightIntro>Full Stack Software Engineer @ <a href="http://www.impel.io" style={{ color: 'white' }}>Impel</a> 💻</SpotlightIntro>
                 <SpotlightIntro>Graduate of <a href="http://www.farmingdale.edu" style={{ color: 'white' }}>Farmingdale State College</a> 🐏</SpotlightIntro>
-                <SpotlightIntro>I’m interested in cryptoeconomics, autonomous vehicles, and building the future</SpotlightIntro>
+                <SpotlightIntro>I’m interested in economics, autonomous vehicles, and building the future 🏗️</SpotlightIntro>
                 <SpotlightIntro>I love meeting new people <a style={{ color: 'white' }} href="mailto:robertchecco.code@gmail.com">let's chat!</a> 👋</SpotlightIntro>
                 <SpotlightIconRow>
                     <li><a href="https://www.github.com/soundestmammal" target="_blank" style={{ color: '#AAAAAA', fontSize: '1.25em', marginRight: '1.5em' }}><FontAwesomeIcon icon={['fab', 'github']}/></a></li>
